@@ -19,7 +19,7 @@ class KotlinTestAssumptions : StringSpec() {
         }
 
         "myMax is in the collection" {
-            assertAll(nonEmptyIntList()) { ints: List<Int> ->
+            assertAll(nonEmptyIntList()) { /*a property */ ints: List<Int> ->
                 val myMax = ints.myMax()!!
 
                 ints shouldContain myMax

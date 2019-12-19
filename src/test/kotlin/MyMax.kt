@@ -8,3 +8,15 @@ fun List<Int>.myMax(): Int? {
     }
     return max
 }
+
+// bad implementation one ;-)
+
+//fun List<Int>.myMax(): Int? {
+//    return if (size < 2) null else this[1]
+//}
+
+// bad implementation two ;-)
+
+//fun List<Int>.myMax(): Int? {
+//    return if (this.isEmpty()) null else Integer.MAX_VALUE
+//}
