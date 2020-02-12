@@ -5,7 +5,7 @@ import io.kotlintest.shouldBe
 import io.kotlintest.shouldNot
 import io.kotlintest.specs.StringSpec
 
-class KotlinTest : StringSpec() {
+class PropertyBased : StringSpec() {
 
     init {
         "no elements greater than myMax" {

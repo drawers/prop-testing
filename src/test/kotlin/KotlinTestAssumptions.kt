@@ -5,7 +5,7 @@ import io.kotlintest.properties.assertAll
 import io.kotlintest.shouldBe
 import io.kotlintest.specs.StringSpec
 
-class KotlinTestAssumptions : StringSpec() {
+class PropertyBasedWithGenerator : StringSpec() {
 
     init {
         "no elements greater than myMax" {
