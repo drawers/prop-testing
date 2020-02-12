@@ -18,6 +18,11 @@ class KotlinTestAssumptions : StringSpec() {
             }
         }
 
+
+
+
+
+
         "myMax is in the collection" {
             assertAll(nonEmptyIntList()) { /*a property */ ints: List<Int> ->
                 val myMax = ints.myMax()!!
@@ -25,6 +30,11 @@ class KotlinTestAssumptions : StringSpec() {
                 ints shouldContain myMax
             }
         }
+
+
+
+
+
 
         "empty is null" {
             assertAll(emptyIntList()) { ints: List<Int> ->

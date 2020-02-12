@@ -18,6 +18,12 @@ class KotlinTest : StringSpec() {
             }
         }
 
+
+
+
+
+
+
         "myMax is in the collection" {
             assertAll { ints: List<Int> ->
                 val myMax = ints.myMax() ?: return@assertAll
@@ -25,6 +31,10 @@ class KotlinTest : StringSpec() {
                 ints shouldContain myMax
             }
         }
+
+
+
+
 
         "empty is null" {
             assertAll { ints: List<Int> ->
