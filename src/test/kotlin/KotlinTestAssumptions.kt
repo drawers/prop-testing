@@ -18,23 +18,13 @@ class PropertyBasedWithGenerator : StringSpec() {
             }
         }
 
-
-
-
-
-
         "myMax is in the collection" {
-            assertAll(nonEmptyIntList()) { /*a property */ ints: List<Int> ->
+            assertAll(nonEmptyIntList()) { ints: List<Int> ->
                 val myMax = ints.myMax()!!
 
                 ints shouldContain myMax
             }
         }
-
-
-
-
-
 
         "empty is null" {
             assertAll(emptyIntList()) { ints: List<Int> ->

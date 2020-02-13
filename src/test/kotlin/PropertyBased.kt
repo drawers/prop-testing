@@ -18,12 +18,6 @@ class PropertyBased : StringSpec() {
             }
         }
 
-
-
-
-
-
-
         "myMax is in the collection" {
             assertAll { ints: List<Int> ->
                 val myMax = ints.myMax() ?: return@assertAll
@@ -31,10 +25,6 @@ class PropertyBased : StringSpec() {
                 ints shouldContain myMax
             }
         }
-
-
-
-
 
         "empty is null" {
             assertAll { ints: List<Int> ->

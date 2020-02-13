@@ -10,30 +10,12 @@ fun List<Int>.myMax(): Int? {
 }
 
 
-
-
-
-
-
-
-
-
-
-
 // bad implementation one ;-)
-
+//
 //fun List<Int>.myMax(): Int? {
 //    return if (size < 2) firstOrNull() else drop(1).first()
 //}
-
-
-
-
-
-
-
-
-
+//
 
 
 // bad implementation two ;-)
